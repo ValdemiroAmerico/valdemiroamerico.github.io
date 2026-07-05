@@ -32,6 +32,12 @@
 --font-body:    'Inter', system-ui, sans-serif;
 --font-mono:    'JetBrains Mono', monospace;
 
+.amp {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
   /* Shape */
   --radius-sm:  6px;
   --radius-md:  12px;
@@ -44,6 +50,16 @@
 
   --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
 }
+
+.pub-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--sky);
+  text-decoration: none;
+  font-weight: 500;
+}
+.pub-link:hover { text-decoration: underline; }
 
 /* ══════════════════════════════════════════════════════
    RESET & BASE
@@ -482,9 +498,9 @@ section ul li {
   content: '';
   position: absolute;
   left: 0; top: 0; bottom: 0;
-  width: 3px;
+  width: 5px;
   background: var(--sky);
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform var(--transition);
