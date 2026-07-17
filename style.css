@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
 
 /* ══════════════════════════════════════════════════════
    DESIGN TOKENS  — Dark-mode professional palette
 ══════════════════════════════════════════════════════ */
 :root {
   /* Backgrounds — light, matching reference site */
-  --bg-base:        #f3f7f5;   /* page background */
+  --bg-base:        #ffffff;   /* page background */
   --bg-surface:     #ffffff;   /* cards, panels */
-  --bg-surface-2:   #eef4f1;   /* slightly lifted surface */
-  --bg-surface-3:   #e2ece7;   /* hover / sidebar */
+  --bg-surface-2:   #f4f4f5;   /* slightly lifted surface */
+  --bg-surface-3:   #e9e9eb;   /* hover / sidebar */
 
   /* Borders */
   --border:         rgba(11,77,61,0.12);
@@ -30,8 +30,8 @@
   --navy:           #0b4d3d;   /* kept for footer compat */
 
   /* Typography */
---font-display: 'Domine', Georgia, serif;
---font-body:    'Atkinson Hyperlegible', system-ui, sans-serif;
+--font-display: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+--font-body:    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 --font-mono:    'Fira Code', monospace;
 
   /* Shape */
@@ -48,7 +48,7 @@
 }
 
 .amp {
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 400;
   font-style: normal;
 }
@@ -76,8 +76,8 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  font-size: 1.04rem;
-  line-height: 1.75;
+  font-size: 1.08rem;
+  line-height: 1.7;
   color: var(--text-primary);
   background: var(--bg-base);
   -webkit-font-smoothing: antialiased;
@@ -162,7 +162,7 @@ nav {
 }
 
 .nav-brand p {
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   font-weight: 400;
   color: rgba(255,255,255,0.75);
   letter-spacing: 0.06em;
@@ -185,10 +185,10 @@ nav ul {
 nav ul li a {
   display: block;
   text-decoration: none;
-  color: rgba(255,255,255,0.82);
+  color: rgba(255,255,255,0.9);
   font-family: var(--font-display);
-  font-size: 0.92rem;
-  font-weight: 500;
+  font-size: 1.05rem;
+  font-weight: 700;
   padding: 0.4rem 0.75rem;
   border-radius: var(--radius-sm);
   transition: color var(--transition), background var(--transition);
@@ -200,8 +200,16 @@ nav ul li a:hover {
 }
 
 nav ul li a.active-page {
-  color: #fff;
+  color: var(--accent);
+  background: #ffffff;
   font-weight: 700;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+nav ul li a.active-page:hover {
+  color: var(--accent);
+  background: #ffffff;
 }
 
 /* Language switcher */
@@ -221,7 +229,7 @@ nav ul li a.active-page {
   border: none;
   padding: 0.25rem 0.65rem;
   cursor: pointer;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 700;
   color: rgba(255,255,255,0.75);
   border-radius: 4px;
@@ -303,7 +311,7 @@ main > *:nth-child(4) { animation-delay: 0.26s; }
 }
 
 .page-banner .eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -314,7 +322,7 @@ main > *:nth-child(4) { animation-delay: 0.26s; }
 
 .page-banner h2 {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.02em;
@@ -350,7 +358,7 @@ section { margin-bottom: 2rem; }
 
 section h2 {
   font-family: var(--font-display);
-  font-size: 1.65rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1.25rem;
@@ -386,7 +394,7 @@ section ul li {
 ══════════════════════════════════════════════════════ */
 .tag {
   display: inline-block;
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--sky);
   background: var(--sky-pale);
@@ -422,7 +430,7 @@ section ul li {
 .sidebar-card:hover { border-color: var(--border-mid); }
 
 .sidebar-card h3 {
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-muted);
   letter-spacing: 0.12em;
@@ -470,7 +478,7 @@ section ul li {
 
 .timeline-item .year {
   font-family: var(--font-mono);
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   margin-bottom: 0.15rem;
   letter-spacing: 0.04em;
@@ -517,7 +525,7 @@ section ul li {
   color: var(--sky);
 }
 .stat-pill .label {
-  font-size: 0.68rem;
+  font-size: 0.74rem;
   font-weight: 400;
   color: var(--text-muted);
   letter-spacing: 0.08em;
@@ -570,7 +578,7 @@ section ul li {
 
 .item-card p {
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   color: var(--text-secondary);
 }
 
@@ -627,7 +635,7 @@ section ul li {
 }
 
 .contact-item .label {
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   margin-bottom: 0.1rem;
 }
@@ -647,7 +655,7 @@ section ul li {
   padding: 2.5rem;
   text-align: center;
 }
-.empty-icon { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
+.empty-icon { font-size: 2.2rem; display: block; margin-bottom: 0.75rem; }
 .empty-state p {
   color: var(--text-muted);
   font-style: italic;
@@ -687,7 +695,7 @@ footer {
   margin-bottom: 0.25rem;
 }
 
-.footer-copy { color: rgba(255,255,255,0.6); font-size: 0.76rem; }
+.footer-copy { color: rgba(255,255,255,0.6); font-size: 0.82rem; }
 
 .footer-socials { display: flex; align-items: center; gap: 0.45rem; }
 
