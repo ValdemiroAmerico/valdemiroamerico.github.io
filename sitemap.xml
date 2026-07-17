@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://valdemiroamerico.com/</loc>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://valdemiroamerico.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://valdemiroamerico.com/about/</loc><priority>0.8</priority></url>
+  <url><loc>https://valdemiroamerico.com/research/</loc><priority>0.8</priority></url>
+  <url><loc>https://valdemiroamerico.com/teaching/</loc><priority>0.8</priority></url>
+  <url><loc>https://valdemiroamerico.com/projects/</loc><priority>0.8</priority></url>
+  <url><loc>https://valdemiroamerico.com/contact/</loc><priority>0.8</priority></url>
 </urlset>
